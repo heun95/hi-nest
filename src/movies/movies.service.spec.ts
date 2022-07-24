@@ -100,6 +100,6 @@ describe('MoviesService', () => {
       } catch (e) {
         expect(e).toBeInstanceOf(NotFoundException);
       }
-    })
+    });
   });
 });

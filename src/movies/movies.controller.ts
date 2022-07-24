@@ -20,7 +20,7 @@ export class MoviesController {
   constructor(readonly moviesService: MoviesService) {}
 
   @Get()
-  getAll(@Req() req, @Res() res): Movie[] {
+  getAll(): Movie[] {
     return this.moviesService.getAll();
   }
   @Get('search')
